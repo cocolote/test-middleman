@@ -1,0 +1,182 @@
+/* Lett's put some makeup! */
+
+@import url(//fonts.googleapis.com/css?family=Raleway);
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #303030;
+}
+
+h1, h3, h5 {
+  color: #33CC33;
+  font-weight: bold;
+  letter-spacing: .3em;
+}
+
+div p {
+  color: white;
+}
+
+#banner-container {
+  background-color: #33CC33;
+  /*background-color: #E6B800;*/
+  background-image: url(/images/greenTree.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 25em;
+  width: 100%;
+  border-bottom: 1em solid white;
+}
+
+#name-prof h5,
+#name-prof h1 {
+  color: white;
+  margin-left: 3%;
+  letter-spacing: .4em;
+  text-shadow: 1px 2px 5px #000;
+}
+
+#links-container {
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#links-container a img {
+  width: 2.5em;
+  margin: 0.2em;
+}
+
+#links-container a:hover {
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255,255,255,0.4);
+}
+
+.badges-contrainer {
+  position: absolute;
+  width: 100%;
+  margin-top: 4em;
+  padding: 0;
+
+}
+
+.badges-contrainer div {
+  text-align: center;
+}
+
+.badges-right {
+  width: 5em;
+  margin-right: 6em;
+}
+
+.badges-left {
+  vertical-align: middle;
+  width: 5em;
+  margin-left: 6em;
+}
+
+.my-face {
+  height: 15em;
+  width: 15em;
+  border: 1em solid white;
+  border-radius: 100%;
+  top: 0;
+}
+
+.panel {
+  position: relative;
+  height: 15em;
+  width: 15em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3.4em;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+}
+
+.panel .front {
+  position: absolute;
+  top: 0;
+  z-index: 900;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  /* This is where the magic happens */
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  /* Transition is the magic sauce to the animation */
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.panel.flip .front {
+  z-index: 900;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.panel .back {
+  position: absolute;
+  top: 0;
+  z-index: 800;
+  width: inherit;
+  height: inherit;
+  /* This is where the magic happens */
+  -webkit-transform: rotateX(0deg) rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+
+  -moz-transform: rotateX(0deg) rotateY(-180deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  /* Transition is the magic sauce to the animation */
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.panel.flip .back {
+  z-index: 900;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+#projects-container {
+  width: 90%;
+  margin-top: 10em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.projects {
+  border-top: 3px dashed #ADAD85;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-top: 1em;
+  height: 18em;
+}
+
+.images img {
+  margin-top: 1em;
+  width: 28em;
+  height: auto;
+  position: relative;
+  box-shadow: 1px 1px 5px 3px #000;
+}
+
+.images img:hover {
+  box-shadow: 1px 1px 21px 3px #33CC33;
+}

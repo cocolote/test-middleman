@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <title>Ezequiel Lopez Portfolio</title>
+  <link type='text/css' rel='stylesheet' href='/stylesheets/vendor/materialize.min.css' media='screen,projection'>
+  <link type='text/css' rel='stylesheet' href='/stylesheets/portfolio.css'>
+</head>
+<body>
+  <div id='banner-container'>
+    <div class='row'>
+      <div class='col s2 offset-s10' id='nav-bar'>
+        <div id='links-container'>
+          <a class='contact-links' href="//github.com/cocolote">
+            <img src='/images/github10.png' alt='my-github'>
+          </a>
+          <a href="//www.linkedin.com/in/ezequieljlopez">
+            <img src='/images/linkedin1.png' alt='my-linkedin'>
+          </a>
+          <a class='contact-links' href="//www.facebook.com/Cocolote">
+            <img src='/images/facebok.png' alt='my-facebook'>
+          </a>
+          <a class='contact-links' href="//twitter.com/j_skiel">
+            <img src='/images/twitter36.png' alt='my-twitter'>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id='name-prof'>
+      <h1>Ezequiel J. Lopez</h1>
+      <h5>Jr Web Developer</h5>
+    </div>
+    <div class='row badges-contrainer'>
+      <div class='col s4'>
+        <img src='/images/jQueryAJAX.png' alt='' class='badges-left'>
+        <img src='/images/sinatra-logo.png' alt='' class='badges-left'>
+      </div>
+      <div class='col s4 offset-s4'>
+        <img src='/images/html-logo.png' alt='' class='badges-right'>
+        <img src='/images/rails.png' alt='' class='badges-right'>
+      </div>
+    </div>
+    <div class='hover panel'>
+      <div class='front'>
+        <div class='pad'>
+            <img src='/images/Ezequiel_Lopez.png' alt='my-face front' class='my-face'>
+        </div>
+      </div>
+      <div class='back'>
+        <div class='pad'>
+            <img src='/images/learn-ruby.png' alt='my-face back' class='my-face'>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='row' id='projects-container'>
+    <h3>Projects</h3>
+<div class='row projects'>
+  <div class='col s5 images'>
+    <a href='//jamradio.herokuapp.com/'>
+      <img src='/images/JamRadio.png' alt='JamRadio'>
+    </a>
+  </div>
+  <div class='col s7 description'>
+    <h5>JamRadio</h5>
+    <p>My final project at Launch. Using SoundCloud API I built
+    an application similar to Pandora with a few more features</p>
+    <p>JamRadio has 3 different playlist. The first one is a list of radio
+    stations where depending on the genre or the name of the artist the app generates
+    a playlist for the user. The second one is a list of the user's favorite songs
+    , he can add songs individually or with the like button adding the song that the
+    radio is playing. The last one is a list of groups, the user can create a group 
+    or be just a guest. Then every member of the group can add songs to the same 
+    playlist, making share music easier.</p>
+  </div>
+</div>
+
+<div class='row projects'>
+  <div class='col s7 description'>
+    <h5>Powered by SoundCloud</h5>
+    <p>First interaction with JavaScript and Ajax requests. This is my first one
+    page only webapp.</p>
+    <p>This app has only the radio stations playlist, that I used later on my final 
+    project.</p>
+    <p>I used Sinatra for this app with ActiveRecord to interact with the database.</p>
+  </div>
+  <div class='col s5 images'>
+    <a href='//radio-sc.herokuapp.com/log_in'>
+      <img src='/images/Radio-sc.png' alt='second-project'>
+    </a>
+  </div>
+</div>
+
+<div class='row projects'>
+  <div class='col s5 images'>
+    <a href='//shrouded-forest-7420.herokuapp.com/'>
+      <img src='/images/RescueMission.png' alt='third-project'>
+    </a>
+  </div>
+  <div class='col s7 description'>
+    <h5>RescueMission</h5>
+    <p>One of the first projects that I had to do at Launch Academy. The idea was 
+    to recreate a blog like StackOverflow where people can post questions and then 
+    other users can post their answers.</p>
+    <p>I started to experiment with foundation and CSS so I went for a neon look
+    for the blog.</p>
+  </div>
+</div>
+
+<div class='row projects'>
+  <div class='col s7 description'>
+    <h5>New Project Creator</h5>
+    <p>In the first two weeks at Launch I had to build a lot of small apps with 
+    Sinatra, tired of creating all the scaffolds by hand I decided to build ag
+    ruby program to do that for me so New Project Creator was born</p>
+    <p>Is a simple ruby routine, easy to scale, that saved me a lot of time 
+    during the beginning of the course, giving me some extra time to style my 
+    projects and focus on the real challenge.</p>
+  </div>
+  <div class='col s5 images'>
+    <a href='//github.com/cocolote/new-project-creator'>
+      <img src='/images/sinatra.png' alt='third-project'>
+    </a>
+  </div>
+</div>
+
+  </div>
+  <script type='text/javascript' src='//code.jquery.com/jquery-2.1.1.min.js'></script>
+  <script type='text/javascript' src='/javascripts/vendor/materialize.min.js'></script>
+  <script type='text/javascript' src='/javascripts/portfolio.js'></script>
+</body>
+</html>
